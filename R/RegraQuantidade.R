@@ -9,7 +9,7 @@
 regraQuantidade <- function(codServMedHosp, qtdeServMedHospPermitida, qtdeServMedHosp, qtdeDiasUltimaSolicitacao){
     ### setwd("C:\\Users\\t01por0117\\Documents") ###
     ### Get prediction ###
-    load(modelo)
+    load("modelo")
     newdata5 <- data.frame(codServMedHosp = codServMedHosp, qtdeServMedHospPermitida = qtdeServMedHospPermitida, qtdeServMedHosp = qtdeServMedHosp, qtdeDiasUltimaSolicitacao = qtdeDiasUltimaSolicitacao)
     pred5 <- predict(modelo, newdata5, type = "prob")
     ### pred5[1,2] ###
